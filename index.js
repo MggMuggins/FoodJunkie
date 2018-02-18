@@ -19,4 +19,9 @@ $(document).ready(function() {
     var viewport_height = $(window).height() - $("nav").outerHeight(true);
     $("#main").height(viewport_height);
     $("#chooser").height(viewport_height);
+    
+    $('.cuisines input[type="checkbox"]').on("click", function() {
+		console.log(this);
+		console.log($(this).data("ex"));
+	});
 });
