@@ -42,6 +42,16 @@ body {
 	padding-bottom: 25%;
 }
 
+#result {
+	background-color: #fec60d;
+	color: #ffffff;
+    align-items: center;
+}
+#result-wrapper {
+	padding-top: 25%;
+	padding-bottom: 25%;
+}
+
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;

@@ -655,6 +655,7 @@ $(document).ready(function() {
     var chooser = $("#chooser").height(viewport_height);
     var preference = $("#preference").height(viewport_height);
     var cuisines = $("#cuisines").height(viewport_height);
+    var result = $("#result").height(viewport_height);
     
     requests.cuisine = [];
     
@@ -711,6 +712,9 @@ $(document).ready(function() {
     });
     
     $('#cuisines .submit').click(function() {
+        $('#result').text(get_resturaunt().name);
+        cuisines.hide();
+        result.show();
         
     });
 });
