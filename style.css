@@ -1,28 +1,44 @@
 body {
-    /*padding-top: 5rem;
-    font-family: 'proxima-nova', Georgia, sans-serif;*/
+	margin-top: 56px;
 }
 
 #main {
-    margin-top: 56px;
 }
 
 #chooser {
-    margin-top: 56px;
-    display: flex;
+	background-color: #fec60d;
+    /*display: flex; */
     align-items: center;
+    color: #ffffff;
+}
+
+#chooser-wrapper {
+	padding-top: 25%;
+	padding-bottom: 25%;
 }
 
 #preference {
-    margin-top: 56px;
-    display: flex;
+	background-color: #fec60d;
+	color: #ffffff;
+    /*display: flex; */
     align-items: center;
 }
 
+#preference-wrapper {
+	padding-top: 25%;
+	padding-bottom: 25%;
+}
+
 #cuisines {
-    margin-top: 56px;
-    display: flex;
+	background-color: #fec60d;
+	color: #ffffff;
+    /* display: flex; */
     align-items: center;
+}
+
+#cuisine-wrapper {
+	padding-top: 25%;
+	padding-bottom: 25%;
 }
 
 .starter-template {
@@ -57,4 +73,4 @@ body {
 }
 #brand-header > img {
     padding: 3em;
-}
+}	
