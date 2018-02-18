@@ -46,8 +46,8 @@
     </nav>
     
     
-    
-    <div role="main" class="container-fluid" id="main">
+    <!--<div class="container-fluid" id="wrapper">-->
+    <div role="main" class="container-fluid" id="main" style="display: none;">
         <div class="jumbotron" id="brand-header">
             <img src="Logo.png" class="logo img-fluid">
         </div>
@@ -68,7 +68,7 @@
         </div>
     </div>
     
-    <div class="container-fluid" id="chooser">
+    <div class="container-fluid" id="chooser" style="display: none;">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h1>What city are you in?</h1>
@@ -84,28 +84,28 @@
             <div class="col-md-6 text-center">
                 <h1>What is your price range?</h1>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-secondary">$</button>
-                    <button type="button" class="btn btn-secondary">$$</button>
-                    <button type="button" class="btn btn-secondary">$$$</button>
+                    <button type="button" class="btn btn-secondary price">$</button>
+                    <button type="button" class="btn btn-secondary price">$$</button>
+                    <button type="button" class="btn btn-secondary price">$$$</button>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container-fluid" id="preference">
+    <div class="container-fluid" id="preference" style="display: none;">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>What your meal preference? </h1>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-secondary">Breakfast</button>
-                    <button type="button" class="btn btn-secondary">Lunch</button>
-                    <button type="button" class="btn btn-secondary">Dinner</button>
+                    <button type="button" class="btn btn-secondary meal">Breakfast</button>
+                    <button type="button" class="btn btn-secondary meal">Lunch</button>
+                    <button type="button" class="btn btn-secondary meal">Dinner</button>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container-fluid" id="cuisines">
+    <div class="container-fluid" id="cuisines" style="display: none;">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1> Type of Cuisine: </h1>
@@ -128,6 +128,7 @@
             </div>
         </div>
     </div>
+    <!--</div>-->
    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
