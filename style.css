@@ -3,6 +3,10 @@ body {
     font-family: 'proxima-nova', Georgia, sans-serif;
 }
 
+#main {
+    margin-top: 56px;
+}
+
 .center_button {
 	text-align: center;
 }
@@ -18,9 +22,14 @@ body {
 	margin: 0 auto !important;
 	padding-top: 20px;
 }
+
 #brand-header {
     background-color: #fec60d;
-    padding: 0px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+    margin: 0 -15px 2em;
+    radius: 0;
+}
+#brand-header > img {
+    padding: 3em;
 }
