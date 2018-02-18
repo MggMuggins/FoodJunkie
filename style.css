@@ -3,11 +3,22 @@ body {
     font-family: 'proxima-nova', Georgia, sans-serif;
 }
 
+#main {
+    margin-top: 56px;
+}
+
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
 .center_button {
 	text-align: center;
 }
 
 #hungrybutton {
+	text-align: center;
 	background-color: #f70000;
 	color: #ffffff;
 	margin-top: 2em;
@@ -18,9 +29,14 @@ body {
 	margin: 0 auto !important;
 	padding-top: 20px;
 }
+
 #brand-header {
     background-color: #fec60d;
-    padding: 0px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+    margin: 0 -15px 2em;
+    radius: 0;
+}
+#brand-header > img {
+    padding: 3em;
 }
