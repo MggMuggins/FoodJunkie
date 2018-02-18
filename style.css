@@ -7,16 +7,6 @@ body {
 }
 
 #chooser {
-<<<<<<< HEAD
-    /*transform: translateY(-50%);*/
-    display: flex;
-    align-items: center;
-    /*text-align: center;*/
-}
-
-#preference {
-    display: flex;
-=======
 	background-color: #fec60d;
     /*display: flex; */
     align-items: center;
@@ -32,7 +22,6 @@ body {
 	background-color: #fec60d;
 	color: #ffffff;
     /*display: flex; */
->>>>>>> 5ec02802ec0f205b3048bcc80c58a76caa023dfb
     align-items: center;
 }
 
@@ -42,13 +31,9 @@ body {
 }
 
 #cuisines {
-<<<<<<< HEAD
-    display: flex;
-=======
+    /*display: flex;*/
 	background-color: #fec60d;
 	color: #ffffff;
-    /* display: flex; */
->>>>>>> 5ec02802ec0f205b3048bcc80c58a76caa023dfb
     align-items: center;
 }
 
