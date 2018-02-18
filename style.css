@@ -7,6 +7,11 @@ body {
     margin-top: 56px;
 }
 
+#chooser {
+    display: flex;
+    align-items: center;
+}
+
 }
 .starter-template {
   padding: 3rem 1.5rem;

@@ -1,4 +1,4 @@
-var restaurants = {
+/*var restaurants = {
     [
         {
             "name": "McDonalds",
@@ -13,4 +13,10 @@ var restaurants = {
             // Here's another one
         }
     ]
-};
+};*/
+
+$(document).ready(function() {
+    var viewport_height = $(window).height() - $("nav").outerHeight(true);
+    $("#main").height(viewport_height);
+    $("#chooser").height(viewport_height);
+});
