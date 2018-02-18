@@ -58,7 +58,8 @@ body {
 
 #result-text {
     font-size: 2em;
-    color: #ffffff;
+    font-weight: bold;
+    color: #000000;
 }
 
 .starter-template {

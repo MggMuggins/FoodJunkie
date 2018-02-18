@@ -700,7 +700,7 @@ $(document).ready(function() {
                 meal = "desert";
                 break;
             default:
-                console.log("Something went horribly wrong...");
+                console.error("Something went horribly wrong...");
         }
         requests.meal = meal;
         preference.hide();
@@ -709,7 +709,6 @@ $(document).ready(function() {
     
     $('#cuisines input[type="checkbox"]').click(function() {
         var string = $(this).data("ex");
-        console.log(string);
         requests.cuisine.push(string);
     });
     
@@ -718,13 +717,14 @@ $(document).ready(function() {
         var name;
         if (res != null) {
             name = res.name;
+        } else {
+            name = "None found matching criteria"
         }
-        console.log(name);
-        $('#result').text(name);
+        $('#result-text').text(name);
         cuisines.hide();
         result.show();
-        console.log("It works");
     });
+    console.log(restaurants.length);
 });
 
 function get_resturaunt() {
@@ -732,15 +732,11 @@ function get_resturaunt() {
 	
 	for(var i in restaurants){
 		var current_restaurant = restaurants[i];
-        console.log(current_restaurant);
-        console.log(requests);
 		if(current_restaurant.type.includes(requests.cuisine[0]) &&
 		(current_restaurant.meals.includes(requests.meal) &&
 		current_restaurant.price == requests.price)) {
 			hits.push(current_restaurant);
-		    console.log("Something");
         }
 	}
-    console.log(hits);
 	return hits[Math.floor(Math.random()*hits.length)];
 }
