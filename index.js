@@ -1,4 +1,4 @@
-var retaurants = [
+var restaurants = [
     {
 		"price": "1",
 		"name": "McDonalds",
@@ -707,20 +707,23 @@ $(document).ready(function() {
     });
     
     $('.cuisines input[type="checkbox"]').on("click", function() {
-        
+        requests.cusine.push($(this).html());
     });
+    
+    requests.cuisine = ["american"];
+    console.log(get_resturaunt());
 });
 
-    function get_resturaunt() {
-		var hits = [];
-		
-		for(var i in resturaunts){
-			var current_resturaunt = resturaunts[i];
-			if(current_resturaunt.type.includes(requests.cuisine) && 
-			current_resturaunt.meals.includes(requests.meal) && 
-			current_resturaunt.price == requests.price) {
-				hits.push(current_resturaunt);
-			}
+function get_resturaunt() {
+	var hits = [];
+	
+	for(var i in restaurants){
+		var current_restaurant = restaurants[i];
+		if(current_restaurant.type.includes(requests.cuisine) &&
+		current_restaurant.meals.includes(requests.meal) &&
+		current_restaurant.price == requests.price) {
+			hits.push(current_restaurant);
 		}
-		return hits[Math.floor(Math.random()*items.length)];
 	}
+	return hits[Math.floor(Math.random()*hits.length)];
+}

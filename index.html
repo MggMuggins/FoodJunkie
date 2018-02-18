@@ -17,7 +17,7 @@
   <body>
       
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Explore</a>
+      <a class="navbar-brand" href="#">FoodJunkie</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,14 +25,8 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		  </li>
-		  <li class="nav-item active">
-			<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-		  </li>
-		   <li class="nav-item active">
-			<a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
-			</li>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -61,19 +55,19 @@
     </div>
     
     <div class="container-fluid" id="chooser" style="display: none;">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h1>What city are you in?</h1>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle disabled" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Bloomington/Normal, IL
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Bloomington/Normal, IL</a>
-                    </div>
+        <!--<div class="row">-->
+        <div class="col-md-6 text-center align-middle">
+            <h1>What city are you in?</h1>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle disabled" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Bloomington/Normal, IL
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Bloomington/Normal, IL</a>
                 </div>
             </div>
-            <div class="col-md-6 text-center">
+        </div>
+            <div class="col-md-6 text-center align-middle">
                 <h1>What is your price range?</h1>
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-secondary price">$</button>
@@ -81,7 +75,6 @@
                     <button type="button" class="btn btn-secondary price">$$$</button>
                 </div>
             </div>
-        </div>
     </div>
     
     <div class="container-fluid" id="preference" style="display: none;">
