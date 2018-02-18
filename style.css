@@ -1,7 +1,23 @@
 body {
   padding-top: 5rem;
+  
 }
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
+}
+
+.center_button {
+	text-align: center;
+}
+
+#hungrybutton {
+	background-color: #f70000;
+	color: #ffffff;
+	margin-top: 2em;
+}
+
+#logo img {
+	margin: 0 auto !important;
+	padding-top: 20px;
 }
