@@ -51,6 +51,13 @@ body {
 	text-align: center;
 }
 
+.submit {
+    text-align: center;
+    background-color: #f70000;
+    color: #ffffff;
+    font-size: 2em;
+}
+
 #hungrybutton {
 	text-align: center;
 	background-color: #f70000;

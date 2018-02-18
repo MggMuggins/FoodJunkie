@@ -710,8 +710,9 @@ $(document).ready(function() {
         requests.cusine.push($(this).html());
     });
     
-    requests.cuisine = ["american"];
-    console.log(get_resturaunt());
+    $('#cuisines .submit').click(function() {
+        
+    });
 });
 
 function get_resturaunt() {
