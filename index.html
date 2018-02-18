@@ -55,15 +55,15 @@
     </div>
     
     <div class="container-fluid" id="chooser" style="display: none;">
-        <!--<div class="row">-->
-        <div class="col-md-6 text-center align-middle">
-            <h1>What city are you in?</h1>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle disabled" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Bloomington/Normal, IL
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Bloomington/Normal, IL</a>
+        <div id="chooser-wrapper">
+            <div class="col-md-6 text-center">
+                <h1>What city are you in?</h1>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle disabled" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bloomington/Normal, IL </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Bloomington/Normal, IL</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,9 +78,9 @@
     </div>
     
     <div class="container-fluid" id="preference" style="display: none;">
-        <div class="row">
+        <div id="preference-wrapper">
             <div class="col-md-12 text-center">
-                <h1>What your meal preference? </h1>
+                <h1>What is your meal preference? </h1>
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-secondary meal">Breakfast</button>
                     <button type="button" class="btn btn-secondary meal">Lunch</button>
@@ -91,12 +91,13 @@
     </div>
     
     <div class="container-fluid" id="cuisines" style="display: none;">
+        <div id="cuisine-wrapper">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1> Type of Cuisine: </h1>
             </div>
         </div>
-        <div class="row cuisines">
+        <div class="row">
             <div class="col-md-6 text-center">
                 <input data-ex="mex" type="checkbox">Mexican<br>
                 <input data-ex="bars" type="checkbox">Bars<br>
@@ -111,6 +112,7 @@
                 <input data-ex="merica"type="checkbox">American<br>
                 <input data-ex="pizza" type="checkbox">Pizza<br>
             </div>
+        </div>
         </div>
     </div>
     <!--</div>-->
