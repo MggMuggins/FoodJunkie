@@ -710,3 +710,17 @@ $(document).ready(function() {
         
     });
 });
+
+    function get_resturaunt() {
+		var hits = [];
+		
+		for(var i in resturaunts){
+			var current_resturaunt = resturaunts[i];
+			if(current_resturaunt.type.includes(requests.cuisine) && 
+			current_resturaunt.meals.includes(requests.meal) && 
+			current_resturaunt.price == requests.price) {
+				hits.push(current_resturaunt);
+			}
+		}
+		return hits[Math.floor(Math.random()*items.length)];
+	}
