@@ -1,10 +1,21 @@
 body {
-    /*padding-top: 5rem;*/
-    font-family: 'proxima-nova', Georgia, sans-serif;
+    /*padding-top: 5rem;
+    font-family: 'proxima-nova', Georgia, sans-serif;*/
 }
 
 #main {
     margin-top: 56px;
+}
+
+#chooser {
+    display: flex;
+    align-items: center;
+}
+
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
 
 .center_button {
@@ -12,6 +23,7 @@ body {
 }
 
 #hungrybutton {
+	text-align: center;
 	background-color: #f70000;
 	color: #ffffff;
 	margin-top: 2em;
@@ -29,6 +41,7 @@ body {
     padding-bottom: 2em;
     margin: 0 -15px 2em;
     radius: 0;
+    border-radius: 0;
 }
 #brand-header > img {
     padding: 3em;
