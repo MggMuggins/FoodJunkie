@@ -8,11 +8,23 @@ body {
 }
 
 #chooser {
+    margin-top: 56px;
     display: flex;
     align-items: center;
 }
 
+#preference {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
 }
+
+#cuisines {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+}
+
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;

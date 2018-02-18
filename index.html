@@ -17,7 +17,7 @@
   <body>
       
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Explore</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,28 +26,20 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+		  </li>
+		   <li class="nav-item active">
+			<a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+			</li>
         </ul>
       </div>
     </nav>
     
     
-    
-    <div role="main" class="container-fluid" id="main">
+    <!--<div class="container-fluid" id="wrapper">-->
+    <div role="main" class="container-fluid" id="main" style="display: none;">
         <div class="jumbotron" id="brand-header">
             <img src="Logo.png" class="logo img-fluid">
         </div>
@@ -66,9 +58,9 @@
                 </div>
             </div>
         </div>
-    </div><!-- /.container -->
+    </div>
     
-    <div class="container-fluid" id="chooser">
+    <div class="container-fluid" id="chooser" style="display: none;">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h1>What city are you in?</h1>
@@ -84,54 +76,55 @@
             <div class="col-md-6 text-center">
                 <h1>What is your price range?</h1>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-secondary">$</button>
-                    <button type="button" class="btn btn-secondary">$$</button>
-                    <button type="button" class="btn btn-secondary">$$$</button>
+                    <button type="button" class="btn btn-secondary price">$</button>
+                    <button type="button" class="btn btn-secondary price">$$</button>
+                    <button type="button" class="btn btn-secondary price">$$$</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="preference">
-    <div class="row">
-		<div class="col-md-12 text-center">
-			<h1>What your meal preference? </h1>
-			<div class="btn-group" role="group">
-				<button type="button" class="btn btn-secondary">Breakfast</button>
-				<button type="button" class="btn btn-secondary">Lunch</button>
-				<button type="button" class="btn btn-secondary">Dinner</button>
-			</div>
-		</div>
-	</div>
-	</div>
-	<div class="container-fluid" id="cuisines">
-   <div class="row">
-		<div class="col-md-12 text-center">
-           <h1> Type of Cuisine: </h1>
-       </div>
-   </div>
-   <div class="row cuisines">
-	   <div class="col-md-6 text-center">
-					<input data-ex="mex" type="checkbox">Mexican<br>
-					<input data-ex="bars" type="checkbox">Bars<br>
-					<input data-ex="coffee" type="checkbox">Coffee<br>
-					<input data-ex="des" type="checkbox">Deserts<br>
-					<input data-ex="boujee" type="checkbox">Boujee<br>
-			</div>
-			<div class="col-md-6 text-center">
-					<input data-ex="fast" type="checkbox">Fast Food<br>
-					<input data-ex="asain" type="checkbox">Asian<br>
-					<input data-ex="italy" type="checkbox">Italian<br>
-					<input data-ex="merica"type="checkbox">American<br>
-					<input data-ex="pizza" type="checkbox">Pizza<br>
-				</div>
-		</div>
-		</div>
-	</div>
+    
+    <div class="container-fluid" id="preference" style="display: none;">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>What your meal preference? </h1>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary meal">Breakfast</button>
+                    <button type="button" class="btn btn-secondary meal">Lunch</button>
+                    <button type="button" class="btn btn-secondary meal">Dinner</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="cuisines" style="display: none;">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1> Type of Cuisine: </h1>
+            </div>
+        </div>
+        <div class="row cuisines">
+            <div class="col-md-6 text-center">
+                <input data-ex="mex" type="checkbox">Mexican<br>
+                <input data-ex="bars" type="checkbox">Bars<br>
+                <input data-ex="coffee" type="checkbox">Coffee<br>
+                <input data-ex="des" type="checkbox">Deserts<br>
+                <input data-ex="boujee" type="checkbox">Boujee<br>
+            </div>
+            <div class="col-md-6 text-center">
+                <input data-ex="fast" type="checkbox">Fast Food<br>
+                <input data-ex="asain" type="checkbox">Asian<br>
+                <input data-ex="italy" type="checkbox">Italian<br>
+                <input data-ex="merica"type="checkbox">American<br>
+                <input data-ex="pizza" type="checkbox">Pizza<br>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>
-  
 </html>
