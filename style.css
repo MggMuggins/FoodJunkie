@@ -42,6 +42,10 @@ body {
 	padding-bottom: 25%;
 }
 
+#cuisine input {
+    font-size: 2em;
+}
+
 #result {
 	background-color: #fec60d;
 	color: #ffffff;
@@ -50,6 +54,11 @@ body {
 #result-wrapper {
 	padding-top: 25%;
 	padding-bottom: 25%;
+}
+
+#result-text {
+    font-size: 2em;
+    color: #ffffff;
 }
 
 .starter-template {
@@ -93,4 +102,3 @@ body {
 #brand-header > img {
     padding: 3em;
 }
-
